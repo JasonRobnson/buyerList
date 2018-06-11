@@ -1,4 +1,4 @@
-module.exports = function(sequelize, DataTypes) {
+module.exports = (sequelize, DataTypes) => {
     let Company = sequelize.define('Company', {
         
         companyName:
@@ -33,6 +33,13 @@ module.exports = function(sequelize, DataTypes) {
              type: DataTypes.STRING,
              notEmpty: true
          },
+         companyWebsite: 
+         {
+             type: DataTypes.STRING, 
+             validate: {
+                 isUrl: true, 
+             }
+         }, 
          companyEmail:
          {
              type: DataTypes.STRING, 
