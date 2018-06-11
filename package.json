@@ -1,0 +1,31 @@
+{
+  "name": "buyercards",
+  "version": "1.0.0",
+  "description": "This is a webApp that stores which prefered brands and companies that you spend money at. ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JasonRobnson/buyerList.git"
+  },
+  "author": "JR",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JasonRobnson/buyerList/issues"
+  },
+  "homepage": "https://github.com/JasonRobnson/buyerList#readme",
+  "dependencies": {
+    "bcrypt": "^2.0.1",
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.5.3",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "sequelize": "^4.37.10"
+  }
+}
