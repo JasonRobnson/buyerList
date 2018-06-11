@@ -1,35 +1,41 @@
-module.exports = function() {
+module.exports = function(sequelize, DataTypes) {
     let Company = sequelize.define('Company', {
         
         companyName:
          {
-            type: Sequelize.STRING, 
+            type: DataTypes.STRING, 
             notEmpty: true
          },
          companyAddressStr:
          {
-             type: Sequelize.STRING,
+             type: DataTypes.STRING,
              notEmpty: true 
          },
          companyAddressState:
          {
-             type: Sequelize.STRING,
+             type: DataTypes.STRING,
              notEmpty: true
          },
          companyZipCode:
          {
-             type: Sequelize.INTEGER,
+             type: DataTypes.INTEGER,
              notEmpty: true,
              not:["[a-z]",'i'],
          }, 
+         phoneNumber:
+         {
+            type: DataTypes.STRING,
+            notEmpty: true, 
+            not:["[a-z]",'i'], 
+         },
          pulicCompany: 
          {
-             type: Sequelize.STRING,
+             type: DataTypes.STRING,
              notEmpty: true
          },
          companyEmail:
          {
-             tpe: Sequelize.STRING, 
+             type: DataTypes.STRING, 
              validate: {
                  isEmail: true
              }
